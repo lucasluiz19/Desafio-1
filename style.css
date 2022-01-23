@@ -2,8 +2,12 @@
     margin: 0%;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
-
+body{
+    
+    height: 100vh;
+}
 
 header{
     display: flex;
@@ -47,6 +51,11 @@ header{
     margin-right: 20px;
     background: transparent;
     border: none;
+    cursor: pointer;
+    
+}
+#search{
+    width: 23.44px;
 }
 .input{
     background: transparent;
@@ -64,7 +73,6 @@ header{
 }
 main{
     display: flex;
-    height: 100%;
     background: #F3F5F7;
     display: flex;
     flex-direction: row;
@@ -76,11 +84,13 @@ main{
     margin-top: 100px;
     width: 950px;
     
+    
 }.section{
+
     background: #FFFFFF;
     border-radius: 5px;
     margin-bottom: 50px;
-    padding: 23px;
+    padding: 25px;
 }
 
 .titulo_section{
@@ -110,3 +120,50 @@ color: #717171;
     color: #717171;
     width: 842px;
 }
+
+
+@media (max-width: 1000px){
+    .header, .main{
+        width: 90%;
+    }
+    .links_header{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .form{
+        height: 40px;
+        
+    }
+    #search{
+        width: 15.63px;
+
+    }
+    .titulo_section{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .sub_tit{
+        font-family: "Lexend Deca";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1A202C;
+    }
+    .section{
+        padding: 16px;
+    }
+    .text{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .input{
+        font-size: 14px;
+    }
+   
+    .text{
+        width: 100%;
+    }
+    
+  
+   }
